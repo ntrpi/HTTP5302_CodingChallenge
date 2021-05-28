@@ -1,0 +1,31 @@
+:root {
+
+  --generalFontFamily: 'Open Sans', sans-serif;
+  --headingFontFamily: 'Lato', sans-serif;
+
+} 
+
+html {
+  box-sizing:border-box;
+}
+
+*, *::before, *::after {
+  box-sizing:inherit;
+}
+
+.row {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.col-4 {
+  width: 33%;
+}
+
+.image-circle-crop {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+}
