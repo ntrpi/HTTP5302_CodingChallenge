@@ -3,6 +3,27 @@
   --generalFontFamily: 'Open Sans', sans-serif;
   --headingFontFamily: 'Lato', sans-serif;
 
+    /* --a: #777;
+    --a: #773;
+    --a: #737;
+    --a: #377;
+    --a: #733;
+    --a: #337;
+    --a: #373;
+    --a: #770;
+    --a: #707;
+    --a: #077;
+    --a: #700;
+    --a: #007;
+    --a: #070;
+    --a: #333;
+    --a: #330;
+    --a: #303;
+    --a: #033;
+    --a: #300;
+    --a: #003;
+    --a: #030; */
+
 } 
 
 html {
@@ -13,19 +34,74 @@ html {
   box-sizing:inherit;
 }
 
-.row {
+body {
+  font-family: var( --generalFontFamily );
+}
+
+h2 {
+  font-weight: normal;
+}
+
+.panels-div {
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
-.col-4 {
-  width: 33%;
+.panel {
+  border: 1px solid black;
+  text-align: center;
+  width: 250px;
+  height: 350px;
+  position: relative;
+  margin-top: 1em;
 }
 
-.image-circle-crop {
-  width: 100px;
-  height: 100px;
+.crown {
+  height: 1.2em;
+  text-align: right;
+  padding: .2rem;
+}
+
+.img-circle-crop img {
+  width: 140px;
+  height: 140px;
   position: relative;
   overflow: hidden;
   border-radius: 50%;
+}
+
+.name {
+
+}
+
+.bio-div {
+  padding: 0 .5rem;
+  text-align: left;
+}
+
+.bio-div p {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.roles-div {
+  position: absolute;
+  bottom: 0;
+  padding: .1rem .5rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.role {
+  color: white;
+  display: inline-block;
+  margin: .2rem;
+  padding: .1rem .8rem;
 }
